@@ -43,3 +43,12 @@ def pets_by_breed(shop, breed) #could be pets_by_breed
 
   return breed_array
 end
+
+#(8)
+def find_pet_by_name(shop, name)
+  for pets in shop[:pets]
+    if pets[:name] == "Arthur"
+      return  pets
+    end
+  end
+end
