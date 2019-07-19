@@ -28,4 +28,18 @@ end
 #(6)
 def stock_count(shop)
   return shop[:pets].size
-end 
+end
+
+#(7)
+def pets_by_breed(shop, breed) #could be pets_by_breed
+  types = shop[:pets]
+  breed_array = []
+
+    for type in types
+      if type[:breed] == breed
+        breed_array.push(type)
+      end
+    end
+
+  return breed_array
+end
