@@ -44,13 +44,38 @@ def pets_by_breed(shop, breed) #could be pets_by_breed
   return breed_array
 end
 
-#(8) + (9)
+# #(8) + (9) - COME BACK TO THIS!!!!
 def find_pet_by_name(shop, name)
   for pets in shop[:pets]
     if pets[:name] == "Arthur"
-      return  pets
+      return pets
     # elsif pets[:name] == "Fred"
-    #   return
     end
   end
+end
+
+#(10) - COME BACK TO THIS!!!
+
+# def remove_pet_by_name(shop, name)
+#   for pets in shop[:pets]
+#     if pets[:name] == "Arthur"
+#
+#       (pets.delete)
+#
+#     end
+#   end
+# end
+
+#(11)
+
+def add_pet_to_stock(shop, pet)
+
+ new_pet = {
+   name: "Ziggy",
+   pet_type: :dog,
+   breed: "Golden Retreiver",
+   price: 700
+  }
+
+@pet_shop[:pets].push(new_pet)
 end
