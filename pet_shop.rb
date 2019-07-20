@@ -96,3 +96,9 @@ end
 def customer_pet_count(customer)
   return @customers[0][:pets].length
 end
+
+#(15)
+
+def add_pet_to_customer(customer, pet)
+  @customers[0][:pets] << @new_pet
+end
