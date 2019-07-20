@@ -91,3 +91,8 @@ end
 def remove_customer_cash(cutomer, cash)
   @customers[0][:cash] -= cash
 end
+
+#(14)
+def customer_pet_count(customer)
+  return @customers[0][:pets].length
+end
