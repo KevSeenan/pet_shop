@@ -85,3 +85,9 @@ end
 def customer_cash(cash)
   return @customers[0][:cash]
 end
+
+#(13)
+
+def remove_customer_cash(cutomer, cash)
+  @customers[0][:cash] -= cash
+end
