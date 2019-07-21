@@ -44,26 +44,27 @@ def pets_by_breed(shop, breed) #could be pets_by_breed
   return breed_array
 end
 
-# #(8) + (9) - COME BACK TO THIS!!!!
+#(8) + (9) - COME BACK TO THIS!!!!
 def find_pet_by_name(shop, name)
   for pets in shop[:pets]
-    if pets[:name] == "Arthur"
-      return pets
-    # elsif pets[:name] == "Fred"
+    if pets[:name] == name
+     return pets
     end
-  end
-end
 
+    # if (pets[:name] != name)
+    #
+    #   return nil
+    # end
+ end
+end
 #(10) - COME BACK TO THIS!!!
 
 # def remove_pet_by_name(shop, name)
-#   for pets in shop[:pets]
-#     if pets[:name] == "Arthur"
-#
-#       (pets.delete)
-#
+#     for pets in shop[:pets]
+#       if pets[:name] == "Arthur"
+#         shop[:pets].delete(pet)
+#       end
 #     end
-#   end
 # end
 
 #(11)
@@ -80,25 +81,25 @@ def add_pet_to_stock(shop, pet)
 @pet_shop[:pets].push(@new_pet)
 end
 
-# #(12)
-#
-# def customer_cash(cash)
-#   return @customers[0][:cash]
-# end
-#
-# #(13)
-#
-# def remove_customer_cash(cutomer, cash)
-#   @customers[0][:cash] -= cash
-# end
-#
-# #(14)
-# def customer_pet_count(customer)
-#   return @customers[0][:pets].length
-# end
-#
-# #(15)
-#
-# def add_pet_to_customer(customer, pet)
-#   @customers[0][:pets] << @new_pet
-# end
+#(12)
+
+def customer_cash(cash)
+  return @customers[0][:cash]
+end
+
+#(13)
+
+def remove_customer_cash(cutomer, cash)
+  @customers[0][:cash] -= cash
+end
+
+#(14)
+def customer_pet_count(customer)
+  return @customers[0][:pets].length
+end
+
+#(15)
+
+def add_pet_to_customer(customer, pet)
+  @customers[0][:pets] << @new_pet
+end
