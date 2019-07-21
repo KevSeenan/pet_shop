@@ -44,18 +44,20 @@ def pets_by_breed(shop, breed) #could be pets_by_breed
   return breed_array
 end
 
-#(8) + (9) - COME BACK TO THIS!!!!
+#(8) + (9) -
 def find_pet_by_name(shop, name)
   for pets in shop[:pets]
-    if pets[:name] == name
-     return pets
-    end
+    # if pets[:name] == name
+    #  return pets
+#
+#    else
+      if pets[:name] != name
 
-    # if (pets[:name] != name)
-    #
-    #   return nil
-    # end
- end
+
+          return nil
+        # end
+    end
+  end
 end
 #(10) - COME BACK TO THIS!!!
 
