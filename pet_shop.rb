@@ -61,13 +61,13 @@ def find_pet_by_name(shop, name)
 end
 #(10) - COME BACK TO THIS!!!
 
-# def remove_pet_by_name(shop, name)
-#     for pets in shop[:pets]
-#       if pets[:name] == "Arthur"
-#         shop[:pets].delete(pet)
-#       end
-#     end
-# end
+def remove_pet_by_name(shop, name)
+    for pets in shop[:pets]
+      if pets[:name] == name
+        shop[:pets].delete(shop[:pets])
+      end
+    end
+end
 
 #(11)
 
