@@ -44,29 +44,41 @@ def pets_by_breed(shop, breed) #could be pets_by_breed
   return breed_array
 end
 
-#(8) + (9) -
-def find_pet_by_name(shop, name)
-  for pets in shop[:pets]
-    # if pets[:name] == name
-    #  return pets
+#(8) + (9)
+# def find_pet_by_name(shop, name)
+#   for pets in shop[:pets]
+#     if pets[:name] == name
+#      return pets
 #
 #    else
-      if pets[:name] != name
+#       if pets[:name] != name
+#
+#
+#           return nil
+#         end
+#     end
+#   end
+# end
 
-
-          return nil
-        # end
+def find_pet_by_name(shop, name)
+  for pets in shop[:pets]
+    if pets[:name] == name
+      return pets
     end
   end
+
+  return nil
 end
-#(10) - COME BACK TO THIS!!!
+#(10) - updated with help from Diane in the morning
 
 def remove_pet_by_name(shop, name)
-    for pets in shop[:pets]
-      if pets[:name] == name
-        shop[:pets].delete(shop[:pets])
+    for pet in shop[:pets]
+      if pet[:name] == name
+        shop[:pets].delete(pet)
       end
     end
+
+    return nil
 end
 
 #(11)
@@ -104,4 +116,14 @@ end
 
 def add_pet_to_customer(customer, pet)
   @customers[0][:pets] << @new_pet
+end
+
+# OPTIONAL
+
+#(1)
+
+def customer_can_afford_pet(customer, cash)
+if @customers[:cash] >= 100
+
+end
 end
